@@ -598,7 +598,12 @@ require('lazy').setup({
           filetypes = { 'ocaml', 'menhir', 'ocamlinterface', 'ocamllex', 'reason', 'dune' },
           root_markers = { '*.opam', 'esy.json', 'package.json', '.git', 'dune-project', 'dune-workspace' },
           settings = {
-            type_enclosing = true,
+            extendedHover = { enable = true },
+            codelens = { enable = true },
+            duneDiagnostics = { enable = true },
+            inlayHints = { enable = true },
+            syntaxDocumentation = { enable = true },
+            merlinJumpCodeActions = { enable = true },
           },
         },
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -805,7 +810,6 @@ require('lazy').setup({
       signature = { enabled = true },
     },
   },
-
 
   -- COLORSCHEMES --
   -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
