@@ -593,19 +593,19 @@ require('lazy').setup({
         pyright = {},
         rust_analyzer = {},
         clojure_lsp = {},
-        ocamllsp = {
-          cmd = { 'ocamllsp' },
-          filetypes = { 'ocaml', 'menhir', 'ocamlinterface', 'ocamllex', 'reason', 'dune' },
-          root_markers = { '*.opam', 'esy.json', 'package.json', '.git', 'dune-project', 'dune-workspace' },
-          settings = {
-            extendedHover = { enable = true },
-            codelens = { enable = true },
-            duneDiagnostics = { enable = true },
-            inlayHints = { enable = true },
-            syntaxDocumentation = { enable = true },
-            merlinJumpCodeActions = { enable = true },
-          },
-        },
+        -- ocamllsp = {
+        --   cmd = { 'ocamllsp' },
+        --   filetypes = { 'ocaml', 'menhir', 'ocamlinterface', 'ocamllex', 'reason', 'dune' },
+        --   root_markers = { '*.opam', 'esy.json', 'package.json', '.git', 'dune-project', 'dune-workspace' },
+        --   settings = {
+        --     extendedHover = { enable = true },
+        --     codelens = { enable = true },
+        --     duneDiagnostics = { enable = true },
+        --     inlayHints = { enable = true },
+        --     syntaxDocumentation = { enable = true },
+        --     merlinJumpCodeActions = { enable = true },
+        --   },
+        -- },
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
